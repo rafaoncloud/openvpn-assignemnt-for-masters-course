@@ -1,0 +1,6 @@
+auth [user_unknown=ignore success=ok ignore=ignore default=bad] pam_securetty.so
+auth required pam_google_authenticator.so forward_pass
+auth include system-auth
+account include system-auth
+password include system-auth
+
